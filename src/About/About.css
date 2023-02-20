@@ -4,6 +4,83 @@
   height: 365px;
   margin-bottom: 50px;
 }
+
+@media (max-width: 550px) {
+  .about_hero h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 58px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    width: 700px;
+  }
+  .about_hero {
+    margin: -35px calc(-50vw + 50%);
+    background: #f9f9f9;
+    height: 365px;
+    margin-bottom: 50px;
+    width: 800px;
+
+  }
+
+  .about_philoshopy {
+    display: inline-grid !important;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 70px !important;
+width: 800px  }
+  .about_philoshopy img {
+    width: 600px !important;
+    height: 586px;
+    border-radius: 15px;
+  }
+  .about_philoshopy_text {
+    width: 600px !important;
+    align-self: center;
+  }
+  .testimonial {
+    display: inline-grid !important;
+    justify-content: center;
+    background: #f9f9f9;
+    height: 450px;
+    width: 700px;
+    margin-left: 30px !important;
+  }
+  .first_text {
+    display: inline-grid !important;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 50px;
+    width: 800px;
+  }
+  .first_text h1 {
+    font-weight: 700;
+    font-size: 25px !important;
+    line-height: 50px;
+    text-transform: capitalize;
+  }
+  .first_text p {
+    width: 600px !important;
+    color: #464646;
+    margin-bottom: 25px;
+    line-height: 24px;
+    font-size: 16px !important;
+    text-align: justify;
+  }
+
+  .second_text {
+    display: inline-grid !important;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    width: 800px;
+  }
+
+
+}
+
 .about_hero h1 {
   text-align: center;
   padding-top: 100px;
@@ -82,7 +159,7 @@
 .second_text {
   display: flex;
   justify-content: center;
-  gap: 175px;
+  gap: 20px;
   margin-bottom: 50px;
 }
 .second_text span {

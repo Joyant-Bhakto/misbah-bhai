@@ -43,7 +43,7 @@ const Navigation = () => {
               >
                 About
               </NavLink>
-              <a href="https://www.google.com/" className="nav-hover link">
+              <a href="https://drive.google.com/file/d/1MXu0JJoioFoJkdTSpQRjAe2Saf7BI2Pz/view?usp=sharing" className="nav-hover link">
                 Resume
               </a>
               <BookACall />
