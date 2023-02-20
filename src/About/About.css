@@ -1,0 +1,161 @@
+.about_hero {
+  margin: -35px calc(-50vw + 50%);
+  background: #f9f9f9;
+  height: 365px;
+  margin-bottom: 50px;
+}
+.about_hero h1 {
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 58px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.about_hero h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+/*--=========== About Philoshopy ================--*/
+
+.about_philoshopy {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 70px;
+}
+.about_philoshopy img {
+  width: 422px;
+  height: 586px;
+  border-radius: 15px;
+}
+.about_philoshopy_text {
+  width: 600px;
+  align-self: center;
+}
+.about_philoshopy_text h1 {
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+.about_philoshopy_text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+.about_philoshopy_text h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*--=========== What I Bring To The Table ================--*/
+
+.first_text {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+.first_text h1 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+.first_text p {
+  width: 670px;
+  color: #464646;
+  margin-bottom: 25px;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/*--=========== Current Job Roles ================--*/
+.second_text {
+  display: flex;
+  justify-content: center;
+  gap: 175px;
+  margin-bottom: 50px;
+}
+.second_text span {
+  color: #89969f;
+}
+.second_text h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 10px 0 15px;
+}
+.second_text ul {
+  width: 670px;
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #464646;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.second_text ul li {
+  width: 670px;
+  padding-bottom: 5px;
+  text-align: justify;
+}
+
+/*--=========== Testimonial ================--*/
+.section_title {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 7rem 0 0.4rem 5rem;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  background: #f9f9f9;
+  height: 450px;
+}
+.section_subtitle {
+  width: 250px;
+  margin: 0 0 0.3rem 5rem;
+}
+
+.testimonial_container {
+  width: 600px;
+  margin: 4rem 2rem;
+}
+.testimonial_card {
+  margin-bottom: 5px;
+}
+.designstion {
+  margin: -2.5rem 0rem 5rem 4rem;
+  font-weight: 300;
+  font-size: 16px;
+  color: #464646;
+}
+.testimonial_name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #464646;
+  margin: -2.5rem 0rem 2.8rem 4rem;
+}
+.testimonial_description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #464646;
+  margin: -2.5rem 0rem 5rem 4rem;
+}
+span.swiper-pagination-bullet {
+  margin: 20px;
+}
+.swiper-pagination-bullet-active {
+  background: #ff1111 !important;
+}
