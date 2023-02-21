@@ -1,29 +1,25 @@
 import React from "react";
 import image from "./Images/blog1.png";
 
-const Blogs = ({ quantities = [] }) => {
+const Blogs = (data) => {
   return (
     <>
-      <section className="blogs_section container">
-        <div className="blogs_title">
-          <h2>My Blogs ☟</h2>
-        </div>
-        {quantities.map((key) => (
-          <div className="blog_card">
-            <div className="blog_card_hover" key={key}>
-              <img src={image} alt=""></img>
-              <h2>Article</h2>
-              <h3 className="blog_title">
-                Placerat sed pharetra interdum odio et tincidunt
-              </h3>
-              <p className="blog_description">
-                In purus at morbi magna in in maecenas. Nunc nulla magna elit,
-                varius phasellus blandit convallis.
-              </p>
+        <a href={`${data.data.link}`}>
+
+        <div className="blog_card">
+            <div className="blog_card_hover">
+                <img src={data.data.thumbnail} alt=""></img>
+                <h2>Article</h2>
+                <h3 className="blog_title">
+                    {data.data.title}
+                </h3>
+                <p className="blog_description">
+                    In purus at morbi magna in in maecenas. Nunc nulla magna elit,
+                    varius phasellus blandit convallis.
+                </p>
             </div>
-          </div>
-        ))}
-      </section>
+        </div>
+        </a>
     </>
   );
 };

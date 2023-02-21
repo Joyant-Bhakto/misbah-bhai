@@ -2,19 +2,17 @@ import React from "react";
 import Image1 from "./Images/Image1.png";
 import Image2 from "./Images/Image2.png";
 
-const CaseStudies = () => {
+const CaseStudies = (data) => {
+console.log(data,'DDD')
   return (
     <>
-      <section className="container">
-        <div className="case_title">
-          <h2>My case studies ☟</h2>
-        </div>
+      <a href={`${data.data.link}`}>
         <div className="case_section ">
           <div className="image_div">
-            <img src={Image1} alt=""></img>
+            <img src={data?.data.thumbnail} alt=""></img>
           </div>
           <div className="text_div">
-            <h2>Viverra accumsan, sed vestibulum sit turpis neque, sit.</h2>
+            <h2>{data.data.title}</h2>
             <p>
               At accumsan condimentum donec dictumst eros, tempus in diam.
               Ornare gravida quis eu blandit lectus vestibulum egestas. Congue
@@ -24,12 +22,14 @@ const CaseStudies = () => {
             <span className="line">&raquo;</span>
           </div>
         </div>
+      </a>
+      <a href={`${data.data.link}`}>
         <div className="case_section case_section_revarce">
           <div className="image_div">
-            <img src={Image2} alt=""></img>
+            <img src={data?.data.thumbnail} alt=""></img>
           </div>
           <div className="text_div revarce_text">
-            <h2>Viverra accumsan, sed vestibulum sit turpis neque, sit.</h2>
+            <h2>{data.data.title}</h2>
             <p>
               At accumsan condimentum donec dictumst eros, tempus in diam.
               Ornare gravida quis eu blandit lectus vestibulum egestas. Congue
@@ -39,7 +39,7 @@ const CaseStudies = () => {
             <span className="line">&raquo;</span>
           </div>
         </div>
-      </section>
+      </a>
     </>
   );
 };

@@ -81,18 +81,50 @@ const Home = () => {
                     tagArticleWithRow[row].push(item);
                 });
 
-                setItemRows(tagArticleWithRow);
+                setItemRows(posts);
                 setLoading(true);
-                console.log(data)
+                console.log(posts)
             });
     }, []);
 
   return (
     <>
       <Hero />
-      <CaseStudies />
-      <Blogs quantities={quantities} />
-      <Hypothesis quantity={quantity} />
+        <section className="container">
+            <div className="case_title">
+                <h2>My case studies ☟</h2>
+            </div>
+            {itemRows.length != 0 ? itemRows?.map((item, i) => (
+                <CaseStudies data={item} key={i}/>
+            )) : ""}
+
+        </section>
+
+
+        <section className="blogs_section container">
+            <div className="blogs_title">
+                <h2>My Blogs ☟</h2>
+                {/*<Blogs data={itemRows}/>*/}
+
+                {itemRows.length != 0 ? itemRows?.map((item, i) => (
+                    <Blogs data={item} key={i}/>
+                )) : ""}
+            </div>
+
+        </section>
+
+        <section className="blogs_section container">
+            <div className="blogs_title">
+                <h2>My Hypothesis ☟</h2>
+                {itemRows.length != 0 ? itemRows?.map((item, i) => (
+                    <Hypothesis data={item} key={i}/>
+                )) : ""}
+            </div>
+        </section>
+
+
+
+
     </>
   );
 };
