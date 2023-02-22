@@ -12,8 +12,7 @@ WORKDIR /
 # Running the app
 CMD [ "serve", "-s", "/usr/src/app/build" ]
 
-#FROM nginx:alpine
+FROM nginx:alpine
 #
-#COPY --from=builder /usr/app/config/nginx.conf /etc/nginx/conf.d/default.conf
-#COPY --from=builder /usr/app/build /usr/share/nginx/html
+COPY --from=builder /usr/app/build /usr/share/nginx/html
 
