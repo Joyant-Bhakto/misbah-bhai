@@ -15,7 +15,7 @@ const Blogs = (data) => {
                 </h3>
                 <p className="blog_description">
                     In purus at morbi magna in in maecenas. Nunc nulla magna elit,
-                    varius phasellus blandit convallis.
+                    varius phasellus blandit convallis. 555
                 </p>
             </div>
         </div>
