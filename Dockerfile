@@ -7,7 +7,7 @@ COPY . ./
 RUN npm install --production --legacy-peer-deps
 RUN npm install -g serve
 RUN npm run build
-EXPOSE 3000
+EXPOSE 8080
 WORKDIR /
 # Running the app
 CMD [ "serve", "-s", "/usr/src/app/build" ]
